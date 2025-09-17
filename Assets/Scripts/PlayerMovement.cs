@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
         float hInput = Input.GetAxis("Horizontal");
         float vInput = Input.GetAxis("Vertical");
 
-        transform.Translate(hIn put * moveSpd * Time.deltaTime, 0, 0);
+        transform.Translate(hInput * moveSpd * Time.deltaTime, 0, 0);
 
         transform.Translate(0, vInput * moveSpd * Time.deltaTime, 0);
     }
